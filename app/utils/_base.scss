@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: $Font-Family;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.vertical-align {
+  align-items: center;
+}
+
+.horizontal-align {
+  justify-content: center;
+}
+
+input,
+textarea,
+button,
+select {
+  border: 0;
+  outline: 0;
+}

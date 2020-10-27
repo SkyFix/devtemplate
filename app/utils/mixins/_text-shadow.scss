@@ -1,0 +1,11 @@
+// тень текста
+// пример: @include ts(1px,1px,3px,$red);
+@mixin ts($x, $y, $blur, $color) {
+  text-shadow: $x $y $blur $color;
+}
+
+// тень текста (множественный эффект)
+// пример: @include text-shadow(1px 1px 1px $red, 2px 2px 2px $green);
+@mixin text-shadow($shadows...) {
+  text-shadow: $shadows;
+}

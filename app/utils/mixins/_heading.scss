@@ -1,0 +1,13 @@
+/* mixin example */
+//h1.heading {font-size: 42px;}
+//h2.heading {font-size: 21px;}
+//h3.heading {font-size: 14px;}
+//h4.heading {font-size: 10.5px;}
+//h5.heading {font-size: 8.4px;}
+//h6.heading {font-size: 7px;}
+
+@for $index from 1 through 6 {
+  h#{$index}.heading {
+    font-size: (42px / $index);
+  }
+}

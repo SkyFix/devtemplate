@@ -1,0 +1,12 @@
+// Горизонтальная линия
+// пример: @include sep-h(80%,2px,blue);
+@mixin sep-h($w,$h,$color) {
+  &::after {
+    content: '';
+    display: block;
+    height: $h;
+    width: $w;
+    margin: 0 auto;
+    background-color: $color;
+  }
+}

@@ -1,0 +1,23 @@
+{
+	"disallowClassLiterals": true,
+	"disallowBlockExpansion": true,
+	"disallowClassLiteralsBeforeAttributes": true,
+	"disallowClassLiteralsBeforeIdLiterals": true,
+	"disallowIdLiterals": true,
+	"disallowLegacyMixinCall": true,
+	"disallowSpacesInsideAttributeBrackets": true,
+	"maximumLineLength": 120,
+	"requireLowerCaseAttributes": true,
+	"requireLowerCaseTags": true,
+	"requireSpaceAfterCodeOperator": true,
+	"requireSpecificAttributes": [
+		{
+			"img": [
+			  "src",
+				"alt"
+			]
+		}
+	],
+	"validateAttributeQuoteMarks": "'",
+	"validateIndentation": 2
+}

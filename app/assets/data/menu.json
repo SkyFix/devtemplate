@@ -1,0 +1,22 @@
+{
+  "menuList": [
+    {
+      "title": "Главная страница",
+      "menuItemClass": "",
+      "menuLinkClass": "menu__link_active",
+      "href": "main.html"
+    },
+    {
+      "title": "О компании",
+      "menuItemClass": "",
+      "menuLinkClass": "",
+      "href":"about.html"
+    },
+    {
+      "title": "Каталог",
+      "menuItemClass": "",
+      "menuLinkClass": "",
+      "href": "catalog.html"
+    }
+  ]
+}

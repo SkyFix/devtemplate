@@ -1,0 +1,19 @@
+// Стилизация placeholder
+// пример: @include place($red);
+@mixin place($cl) {
+  &::-webkit-input-placeholder {
+    color: $cl;
+  }
+
+  &::-moz-placeholder {
+    color: $cl;
+  }
+
+  &:-moz-placeholder {
+    color: $cl;
+  }
+
+  &:-ms-input-placeholder {
+    color: $cl;
+  }
+}

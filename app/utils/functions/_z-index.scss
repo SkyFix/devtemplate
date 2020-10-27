@@ -1,0 +1,44 @@
+/*-Z-index
+Хотя технически это всего лишь функция, но я решил ее тоже добавить. В большом проекте бывает трудно уследить за всеми значениями индекса, а этот миксин поможет собрать их в одном месте.
+
+@function z($name) {
+  @if index($z-indexes, $name) {
+   @return (length($z-indexes) - index($z-indexes, $name)) + 1;
+  } @else {
+   @warn 'There is no item "#{$name}" in this list; choose one of: #{$z-indexes}';
+   @return null;
+  }
+}
+$z-indexes: (
+  "outdated-browser",
+  "modal",
+  "site-header",
+  "page-wrapper",
+  "site-footer"
+);
+Когда вы захотите использовать z-index, назовите его так же, как ваш класс, и добавьте в ваш файл переменных/настроек, как ниже. Вы никогда больше не будете иметь проблем с z-index: 9999999;.
+
+.site-header {
+
+  z-index: z('site-header');
+
+}
+
+@function z($name) {
+
+	@if index($z-indexes, $name) {
+
+		@return (length($z-indexes) - index($z-indexes, $name)) + 1;
+
+	} @else {
+
+		@warn 'There is no item "#{$name}" in this list; choose one of: #{$z-indexes}';
+
+		@return null;
+
+	}
+
+}
+
+
+ */

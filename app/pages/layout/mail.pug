@@ -1,0 +1,15 @@
+extends ../../utils/templates/mail
+block vars
+  - var title ='Mail layout'
+  - var classPage ='Page'
+
+block css
+  link(rel='stylesheet' type='text/css' href='./css/style.min.css')
+
+block content
+  //-include ../assets/pugs/debug
+  include ../../modules/Button/_form/Button
+  main(class='Content')
+block scripts
+  script(src='./js/libs.min.js')
+  script(src='js/app.min.js')

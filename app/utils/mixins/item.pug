@@ -1,0 +1,6 @@
+mixin item(title, descr)
+  div(class='item')
+    if title
+      h2(class='item__title')= title
+    if descr
+      p(class='item__description')= descr

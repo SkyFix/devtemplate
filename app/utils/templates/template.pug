@@ -1,0 +1,22 @@
+include ../mixins
+block vars
+
+doctype html
+html(lang='ru-RU')
+  head
+    meta(charset='utf-8')
+    title= title
+    <!--[if IE]>
+    meta(http-equiv='X-UA-Compatible', content='IE = edge')
+    <![endif]-->
+    meta(name='viewport' content='width=device-width,initial-scale=1')
+    meta(name='keywords' content='')
+    meta(name='description' content='Содержимое мета-тега Description')
+    block css
+
+    <!--[if lt IE 9]>
+    script(src='js/html5shiv.min.js')
+    <![endif]-->
+  body(class=classPage)
+    block content
+    block scripts

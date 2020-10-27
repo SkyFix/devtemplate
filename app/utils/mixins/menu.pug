@@ -1,0 +1,14 @@
+//- Example ul(class='menu__list')
+              +link(classItem, classLink, titleLink, hrefLink)
+//-where
+  classItem - имя CSS класса для тега li
+  classLink - имя CSS класса для тега a
+  titleLink - имя ссылки
+  hrefLink - адрес ссылки
+mixin item(classItem, classLink, title, link)
+  if(classItem || classLink)
+    li(class= 'menu__item' + ' ' + classItem)
+      a(href= link class= 'menu__link' + ' ' + classLink)= title
+  else
+    li(class= 'menu__item')
+      a(href= link class='menu__link')= title

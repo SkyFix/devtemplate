@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "stylelint-config-htmlacademy",
+    "stylelint-config-recommended-scss"
+  ],
+  "plugins": [
+    "stylelint-scss"
+  ],
+  "rules": {
+    "string-quotes": "single"
+  }
+}

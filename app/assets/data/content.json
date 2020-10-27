@@ -1,0 +1,18 @@
+{
+  "promo": [
+    {
+      "objClassName": "promo",
+      "Heading": "Cool Promo",
+      "HeadingClassName": "promo__h",
+      "SubTitle": "Подзаголовок2",
+      "SubTitleClassName": "",
+      "DescriptionText": "Описание1",
+      "DescriptionClassName": "description description_active",
+      "Image": {
+        "src": "/images/image.jpg",
+        "title": "image",
+        "ImageClassName": "promo__img"
+      }
+    }
+  ]
+}

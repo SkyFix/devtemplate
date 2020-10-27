@@ -1,0 +1,11 @@
+// скругление универсальное
+// пример: @include br(3px);
+@mixin br($rad) {
+  border-radius: $rad;
+}
+
+// Скругление на каждый угол
+// пример: @include br-c(10px,0,10px,0);
+@mixin br-c($p1,$p2,$p3,$p4) {
+  border-radius: $p1 $p2 $p3 $p4;
+}

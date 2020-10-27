@@ -1,0 +1,6 @@
+//Example: $browser-context: 16; // Default
+//rem(16px); --output 1rem
+
+@function rem($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}rem;
+}

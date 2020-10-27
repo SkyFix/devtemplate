@@ -1,0 +1,16 @@
+{
+  "breadcrumbsList": [
+    {
+      "title": "Главная страница",
+      "href": "main.html"
+    },
+    {
+      "title": "О компании",
+      "href":"about.html"
+    },
+    {
+      "title": "Каталог",
+      "href": "catalog.html"
+    }
+  ]
+}

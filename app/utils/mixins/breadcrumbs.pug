@@ -1,0 +1,10 @@
+//-ul.breadcrumbs
+  +breadcrumbs-item('Home','#')
+  +breadcrumbs-item('Home')
+
+mixin breadcrumbs-item(text,href)
+  li(class= 'breadcrumbs__item')
+    if(href)
+      a(class= 'breadcrumbs__link' href= href)= text
+    else
+      span(class= 'breadcrumbs__text')= text

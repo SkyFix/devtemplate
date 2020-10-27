@@ -1,0 +1,3 @@
+//@mixin font-face($name,$dir, $filename, $weight: normal, $style: normal) {
+@include font-face('Roboto Regular', 'Roboto', 'Roboto-Regular', 'normal', 'normal');//example
+//@include font-face('Roboto Bold', 'Roboto', 'Roboto-Bold', '600', 'normal');//example
